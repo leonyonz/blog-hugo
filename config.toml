@@ -1,0 +1,4 @@
+baseURL = "http://blog.ycb.my.id/"
+languageCode = "en-us"
+title = "Yonz Knowledge Base"
+theme = "ananke"
