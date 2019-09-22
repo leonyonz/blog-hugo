@@ -1,4 +1,90 @@
 baseURL = "http://blog.ycb.my.id/"
-languageCode = "en-us"
-title = "Yonz Knowledge Base"
-theme = "ananke"
+title = "Yonz ComeBack"
+slidesDirPath    = "themes/AllinOne/static/img/header-slides"  
+slidesDirPathURL = "img/header-slides"
+
+builddrafts                = false
+languageCode               = "zn-Hans"
+canonifyurls               = true
+contentdir                 = "content"
+layoutdir                  = "layouts"
+publishdir                 = "public"
+enableEmoji                = true
+hasCJKLanguage             = true
+summaryLength              = 200
+Paginate                   = 3
+
+theme                      = "AllinOne"
+#title                      = "Orianna"
+
+pygmentsuseclasses         = true
+
+
+[permalinks]
+  blog                     = "blog/:year-:month/:slug/"
+
+
+[taxonomies]
+  tag                      = "tags"
+  series                   = "series"
+  category                 = "categories"
+
+
+[menu]
+  [[menu.main]]
+    name                   = "Blog"
+    weight                 = -120
+    identifier             = "blog"
+    url                    = "blog/"  
+
+  [[menu.main]]
+    name                   = "Moment"
+    weight                 = -110
+    identifier             = "moment"
+    url                    = "moment/" 
+
+  [[menu.main]]
+    name                   = "About"
+    weight                 = -100
+    identifier             = "about"
+    url                    = "about/"  
+
+ 
+
+[params]
+  faviconfile              = "img/zheng.png"               # from static/
+  avatar                   = "img/profile.jpg"             # path to image in static dir e.g img/avatar.png 
+  author                   = "Orianna"
+  description              = ["Just a Literally.", "Yonz.", "Website."]           # appears in the site header when set to a non-empty string
+  welcome_head             = "Yonz ComeBack !!"
+  welcome_word             = "~ Thiz Yonz !! ~"
+
+  latestpostscount         = 5                             # how many posts to display on the home page
+  bloggroupby              = 'month'
+  dateform                 = "sept 22, 2019"
+  dateformfull             = "2010-09-22  sunday  11:04:05"
+  noshowreadtime           = false                         # if true, don't show "<x> minutes read" in posts
+
+  # slides
+  slidesDirPath            = "themes/AllinOne/static/img/header-slides"    # path to image in local dir (path for hugo)
+  slidesDirPathURL         = "img/header-slides"    # path to image in static dir (for static pages)
+
+  # highlighting 
+  highlightjs              = true
+
+  # latex
+  katex                    = true
+
+  # links
+  email                    = "admin@ycb.my.id"
+  github                   = "//github.com/leonyonz"
+  linkedin                 = "//linkedin.com/in/leonyonz"
+  facebook                 = "//facebook.com/leontujuhempat"
+  googleplus               = "//google.com/leonachild"
+  twitter                  = "//twitter.com/leonachild" 
+  px500                    = "//px500"
+  instagram                = "//instagram.com/yonzleon_aw"
+  include_rss              = true                          # include RSS <link> tag in <head> and show RSS icon
+  
+  # analytics
+  googleAnalytics          = "your-google-analytic-id"
